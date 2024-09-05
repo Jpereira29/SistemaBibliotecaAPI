@@ -11,4 +11,20 @@ public class TipoUsuario {
     @NotNull
     @Column(name = "tipo", length = 50)
     private String tipo;
+
+    public int getTipoUsuarioId() {
+        return tipoUsuarioId;
+    }
+
+    public void setTipoUsuarioId(int tipoUsuarioId) {
+        this.tipoUsuarioId = tipoUsuarioId;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
 }

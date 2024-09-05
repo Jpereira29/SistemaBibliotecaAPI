@@ -24,4 +24,44 @@ public class Emprestimo {
 
     @NotNull
     private int livroId;
+
+    public int getEmprestimoId() {
+        return emprestimoId;
+    }
+
+    public void setEmprestimoId(int emprestimoId) {
+        this.emprestimoId = emprestimoId;
+    }
+
+    public Date getDataEmprestimo() {
+        return dataEmprestimo;
+    }
+
+    public void setDataEmprestimo(Date dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
+
+    public Date getPrevisaoEntrega() {
+        return previsaoEntrega;
+    }
+
+    public void setPrevisaoEntrega(Date previsaoEntrega) {
+        this.previsaoEntrega = previsaoEntrega;
+    }
+
+    public int getUsuarioId() {
+        return usuarioId;
+    }
+
+    public void setUsuarioId(int usuarioId) {
+        this.usuarioId = usuarioId;
+    }
+
+    public int getLivroId() {
+        return livroId;
+    }
+
+    public void setLivroId(int livroId) {
+        this.livroId = livroId;
+    }
 }

@@ -22,4 +22,44 @@ public class Livro {
 
     @NotNull
     private int autorId;
+
+    public int getLivroId() {
+        return livroId;
+    }
+
+    public void setLivroId(int livroId) {
+        this.livroId = livroId;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public String getCategoria() {
+        return categoria;
+    }
+
+    public void setCategoria(String categoria) {
+        this.categoria = categoria;
+    }
+
+    public String getAnoPublicacao() {
+        return anoPublicacao;
+    }
+
+    public void setAnoPublicacao(String anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
+    }
+
+    public int getAutorId() {
+        return autorId;
+    }
+
+    public void setAutorId(int autorId) {
+        this.autorId = autorId;
+    }
 }
