@@ -6,6 +6,7 @@ import jakarta.validation.constraints.NotNull;
 public class Livro {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "livroid")
     private int livroId;
 
     @NotNull
@@ -17,10 +18,11 @@ public class Livro {
     private String categoria;
 
     @NotNull
-    @Column(name = "anoPublicacao", length = 4)
+    @Column(name = "anopublicacao", length = 4)
     private String anoPublicacao;
 
     @NotNull
+    @Column(name = "autorid")
     private int autorId;
 
     public int getLivroId() {

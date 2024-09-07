@@ -1,8 +1,5 @@
 package sistemabiblioteca.biblioteca.model;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 
 import java.util.Date;
@@ -11,18 +8,23 @@ import java.util.Date;
 public class Emprestimo {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "emprestimoid")
     private int emprestimoId;
 
     @NotNull
+    @Column(name = "dataemprestimo", length = 30)
     private Date dataEmprestimo;
 
     @NotNull
+    @Column(name = "previsaoentrega", length = 30)
     private Date previsaoEntrega;
 
     @NotNull
+    @Column(name = "usuarioid")
     private int usuarioId;
 
     @NotNull
+    @Column(name = "livroid")
     private int livroId;
 
     public int getEmprestimoId() {
